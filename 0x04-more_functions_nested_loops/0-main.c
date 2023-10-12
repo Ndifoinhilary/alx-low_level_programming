@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  * main - check the code.
  *
@@ -9,9 +7,18 @@
 int main(void)
 {
 char c;
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
+ c = 'A';
+_putchar(c);
+_putchar(':');
+_putchar(' ');
+_putchar(_isupper(c) + '0');
+_putchar('\n');
 c = 'a';
-printf("%c: %d\n", c, _isupper(c));
+_putchar(c);
+_putchar(':');
+_putchar(' ');
+_putchar(_isupper(c) + '0');
+_putchar('\n');
 return (0);
 }
+
